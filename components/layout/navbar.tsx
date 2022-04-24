@@ -1,6 +1,3 @@
-<<<<<<< Updated upstream
-import { Flex, useColorMode, Button, Container } from "@chakra-ui/react";
-=======
 import React, { useRef } from "react";
 import {
   Flex,
@@ -23,21 +20,12 @@ import {
   Center,
   HStack,
 } from "@chakra-ui/react";
->>>>>>> Stashed changes
 import { BsMoonStarsFill as Moon, BsSunFill as Sun } from "react-icons/bs";
+import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 
 export const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
-<<<<<<< Updated upstream
-
-  return (
-    <>
-      <Container maxWidht={"container.lg"}>
-        <Flex height={"20"} alignItems={"center"}>
-          <Button onClick={toggleColorMode}>
-            {colorMode === "light" ? <Moon /> : <Sun />}
-          </Button>
-=======
+  const { isOpen, onOpen, onClose } = useDisclosure();
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = useRef();
 
@@ -60,7 +48,6 @@ export const Navbar = () => {
               {colorMode === "light" ? <Moon /> : <Sun />}
             </Button>
           </Flex>
->>>>>>> Stashed changes
         </Flex>
         {isOpen ? (
           <Drawer
@@ -74,7 +61,6 @@ export const Navbar = () => {
             <DrawerContent>
               <DrawerCloseButton />
               <DrawerHeader />
-
               <DrawerBody alignSelf={"center"}>
                 <Center>
                   <Stack>
