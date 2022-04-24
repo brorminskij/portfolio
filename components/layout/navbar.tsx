@@ -26,7 +26,6 @@ import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 export const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = useRef();
 
   return (
