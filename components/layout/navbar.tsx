@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import {
   Flex,
   useColorMode,
@@ -8,78 +8,92 @@ import {
   IconButton,
   Box,
   Stack,
-  Drawer,
-  DrawerOverlay,
-  DrawerContent,
-  DrawerCloseButton,
-  DrawerHeader,
-  DrawerBody,
-  DrawerFooter,
-  Link,
-  VStack,
-  Center,
   HStack,
+  Center,
 } from "@chakra-ui/react";
 import { BsMoonStarsFill as Moon, BsSunFill as Sun } from "react-icons/bs";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+import { useRouter } from "next/router";
+import Link from "./link";
+import Image from "next/image";
+import logo from "/public/wolf2.png";
 
 export const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const btnRef = useRef();
+  let router = useRouter();
+  let { asPath } = router;
+
+  const Links = [
+    {
+      name: "Home",
+      route: "/",
+    },
+    {
+      name: "About me",
+      route: "/about",
+    },
+  ];
+
+  const navLinks = (
+    <>
+      {Links.map((link) => (
+        <Link
+          href={link.route}
+          key={link.name}
+          p={2}
+          rounded={"md"}
+          currentPath={asPath}
+        >
+          {link.name}
+        </Link>
+      ))}
+    </>
+  );
 
   return (
     <>
-      <Container maxWidth={"container.lg"}>
-        <Flex
-          height={"20"}
-          alignItems={"center"}
-          justifyContent={"space-between"}
-        >
-          <IconButton
-            size={"md"}
-            icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
-            onClick={isOpen ? onClose : onOpen}
-            ref={btnRef}
-          />
-          <Flex alignItems={"center"}>
-            <Button onClick={toggleColorMode}>
-              {colorMode === "light" ? <Moon /> : <Sun />}
-            </Button>
-          </Flex>
-        </Flex>
-        {isOpen ? (
-          <Drawer
-            isOpen={isOpen}
-            placement="left"
-            onClose={onClose}
-            finalFocusRef={btnRef}
-            blockScrollOnMount
+      <Box py={5} borderTop="2px" borderTopColor="purple.500">
+        <Container maxWidth={"container.lg"}>
+          <Flex
+            height={"16"}
+            alignItems={"center"}
+            justifyContent={"space-between"}
           >
-            <DrawerOverlay bg="blackAlpha.600" backdropFilter="blur(10px)" />
-            <DrawerContent>
-              <DrawerCloseButton />
-              <DrawerHeader />
-              <DrawerBody alignSelf={"center"}>
-                <Center>
-                  <Stack>
-                    <Link rounded={"md"} p={2}>
-                      {"Home"}
-                    </Link>
-                    <Link rounded={"md"} p={2}>
-                      {"About"}
-                    </Link>
-                    <Link rounded={"md"} p={2}>
-                      {"Skills"}
-                    </Link>
-                  </Stack>
-                </Center>
-              </DrawerBody>
-              <DrawerFooter />
-            </DrawerContent>
-          </Drawer>
-        ) : null}
-      </Container>
+            <IconButton
+              aria-label="Navigation"
+              size={"md"}
+              icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
+              onClick={isOpen ? onClose : onOpen}
+              display={{ md: !isOpen ? "none" : "inherit" }}
+            />
+            <HStack spacing={8} alignItems={"center"}>
+              <Center className="logo">
+                <Image src={logo} width={32} height={32} alt="wolf logo" />
+              </Center>
+              <HStack
+                as={"nav"}
+                spacing={4}
+                display={{ base: "none", md: "flex" }}
+              >
+                {navLinks}
+              </HStack>
+            </HStack>
+            <Flex alignItems={"center"}>
+              <Button onClick={toggleColorMode} aria-label="dark/light mode">
+                {colorMode === "light" ? <Moon /> : <Sun />}
+              </Button>
+            </Flex>
+          </Flex>
+          {isOpen ? (
+            <Box pb={4} mt={3}>
+              <Stack as={"nav"} spacing={4}>
+                {navLinks}
+              </Stack>
+            </Box>
+          ) : null}
+        </Container>
+      </Box>
     </>
   );
 };
