@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { Container, Divider } from "@chakra-ui/react";
 
+import Profile from "/components/pages/index/Profile";
 export default function Home({}) {
   return (
     <div>
@@ -22,6 +23,7 @@ export default function Home({}) {
       </Head>
       <main>
         <Container maxW="container.lg" mt={["5", "10"]}>
+          <Profile />
         </Container>
       </main>
     </div>
