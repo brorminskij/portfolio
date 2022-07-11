@@ -49,7 +49,7 @@ const ToolCard = ({ tool }: ToolProps) => {
             <Heading as="h2" size="sm">
               {tool.name}
             </Heading>
-            <Paragraph fontSize="sm">{tool.description}</Paragraph>
+            <Paragraph>{tool.description}</Paragraph>
           </LinkOverlay>
         </Box>
       </Box>
