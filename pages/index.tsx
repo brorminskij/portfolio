@@ -26,6 +26,8 @@ export default function Home({}) {
           <Profile />
           <Divider my={10} />
           <Stack />
+          <Divider my={10} />
+          <Timeline />
         </Container>
       </main>
     </div>
