@@ -24,6 +24,8 @@ export default function Home({}) {
       <main>
         <Container maxW="container.lg" mt={["5", "10"]}>
           <Profile />
+          <Divider my={10} />
+          <Stack />
         </Container>
       </main>
     </div>
