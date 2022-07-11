@@ -27,6 +27,36 @@ const Profile = () => {
         >
           Hey, I'm {!toggle ? "Alexander" : "Borminskij"}!
         </Heading>
+        <Box mt={10}>
+          <LightMode>
+            <ButtonGroup>
+              <Button
+                colorScheme="purple"
+                bg="purple.500"
+                href="mailto:alexander.borminskij@gmail.com"
+                borderRadius={5}
+                p={3}
+                as="a"
+                leftIcon={<FaEnvelope />}
+                aria-label="email"
+              >
+                Email
+              </Button>
+              <Button
+                colorScheme="purple"
+                bg="purple.500"
+                href="https://www.linkedin.com/in/borminskij"
+                borderRadius={5}
+                p={3}
+                as="a"
+                leftIcon={<FaLinkedin />}
+                aria-label="linkedin"
+              >
+                Linkedin
+              </Button>
+            </ButtonGroup>
+          </LightMode>
+        </Box>
       </Box>
     </SlideFade>
   );
