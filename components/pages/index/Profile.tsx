@@ -8,6 +8,10 @@ import {
   ButtonGroup,
   useBoolean,
 } from "@chakra-ui/react";
+
+import { FaEnvelope, FaLinkedin } from "react-icons/fa";
+import Paragraph from "../../Paragraph";
+
 const Profile = () => {
   const [toggle, setToggle] = useBoolean();
   const [welcomeMessage, setWelcomeMessage] = useState([
@@ -27,6 +31,13 @@ const Profile = () => {
         >
           Hey, I'm {!toggle ? "Alexander" : "Borminskij"}!
         </Heading>
+        {welcomeMessage.map((i, index) => {
+          return (
+            <Paragraph key={index} fontSize="2xl" lineHeight={1.6}>
+              {i}
+            </Paragraph>
+          );
+        })}
         <Box mt={10}>
           <LightMode>
             <ButtonGroup>
