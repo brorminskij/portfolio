@@ -5,7 +5,7 @@ import Layout from "/components/layout/layout";
 
 const config = {
   initialColorMode: "dark",
-  useSystemColorMode: false,
+  useSystemColorMode: true,
 };
 
 const theme = extendTheme({ config });
