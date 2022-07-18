@@ -16,7 +16,7 @@ import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { useRouter } from "next/router";
 import Link from "./link";
 import Image from "next/image";
-import logo from "/public/wolf2.png";
+import logo from "../../public/wolf2.png";
 
 export const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
