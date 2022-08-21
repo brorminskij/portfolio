@@ -11,15 +11,16 @@ export default function Home({}) {
         <title>Alexander Borminskij | Home</title>
         <meta
           name="description"
-          content="Alexander Borminskij | Front End Developer"
+          content="Alexander Borminskij | Fullstack Developer"
         />
+        <link rel="shortcut icon" href="/favicon.webp" />
         <meta property="og:type" content="website" />
         <meta name="robots" content="follow, index" />
         <meta property="og:url" content="https://borminskij.com" />
         <meta name="color-scheme" content="dark" />
         <meta
           property="og:title"
-          content="Alexander Borminskij | Front End Developer"
+          content="Alexander Borminskij | Fullstack Developer"
         />
         <meta property="og:image" content="/meta-image.jpg" />
       </Head>

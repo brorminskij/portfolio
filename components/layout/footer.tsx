@@ -9,7 +9,7 @@ import {
   Divider,
 } from "@chakra-ui/react";
 import Image from "next/image";
-import logo from "../../public/wolf2.PNG";
+import logo from "/public/wolf.webp";
 
 import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 
@@ -30,7 +30,7 @@ const Footer = () => (
         justify="space-between"
         pb={5}
       >
-        <Image src={logo} width={32} height={32} />
+        <Image src={logo} width={32} height={32} alt="Wolf logo" />
         <ButtonGroup variant="ghost">
           <IconButton
             as="a"

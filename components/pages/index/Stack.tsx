@@ -9,14 +9,14 @@ import {
   FaDatabase,
 } from "react-icons/fa";
 
-import Paragraph from "../../Paragraph";
+import Paragraph from "/components/Paragraph";
 
 const tools = [
   {
     name: "JavaScript",
     description: "These days you can't build an amazing product without JS.",
     icon: <FaJs fontSize="20px" />,
-    url: "https://www.javascript.info",
+    url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
   },
   {
     name: "React",
@@ -26,13 +26,13 @@ const tools = [
   },
   {
     name: "NodeJS",
-    description: "Built on Chromes's V8 JS engine for server-side javascript.",
+    description: "Built on Chromes's V8 JavaScript engine.",
     icon: <FaNodeJs fontSize="20px" />,
-    url: "https://www.mongodb.com/",
+    url: "https://nodejs.org/en/",
   },
   {
     name: "Databases",
-    description: "Prefer MongodDB but SQL works too.",
+    description: "MySQL, SQLite, MongoDB and Firebase to mention a few.",
     icon: <FaDatabase fontSize="20px" />,
     url: "https://www.mongodb.com/",
   },

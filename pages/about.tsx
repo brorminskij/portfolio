@@ -16,20 +16,11 @@ import Paragraph from "../components/Paragraph";
 const About: FC = () => {
   const [show, setShow] = useState<boolean>(false);
 
-  const [likes, setLikes] = useState<string[]>([
-    "Family",
-    "Tech",
-    "Space",
-    "Adventure",
-    "Training",
-    "Food",
-    "Coffee",
-  ]);
+  const [likes, setLikes] = useState<string[]>(["Tech", "Adventure", "Summer"]);
   const [dislikes, setDislikes] = useState<string[]>([
-    "Gas Prices",
-    "Arctic",
-    "Politics",
+    "Gas prices",
     "Low Battery",
+    "Winter",
   ]);
 
   const handleToggle = () => setShow(!show);
@@ -40,13 +31,14 @@ const About: FC = () => {
         <title>Alexander Borminskij | About</title>
         <meta
           name="description"
-          content="Alexander Borminskij | Front End Developer"
+          content="Alexander Borminskij | Fullstack Developer"
         />
+        <link rel="shortcut icon" href="/favicon.webp" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://borminskij.com" />
         <meta
           property="og:title"
-          content="Alexander Borminskij | Front End Developer"
+          content="Alexander Borminskij | Fullstack Developer"
         />
         <meta property="og:image" content="/meta-image.jpg" />
       </Head>
@@ -63,22 +55,19 @@ const About: FC = () => {
               </Heading>
               <Collapse startingHeight={100} in={show}>
                 <Paragraph fontSize="xl" lineHeight={1.6}>
-                  I am Alexander and I work as a full-stack developer. I live in
-                  Sweden but there is many places I call home.
-                  <br />A <strong>CYB</strong>ernetic <strong>ORG</strong>anism
-                  who enjoys using the CPU, even referred to as the brain.
-                  <br />I enjoy coding because it stimulates my mind. It's ideal
-                  for a brain that requires constant stimulation.
-                  <br />I feel like I'm always moving forward nowadays and it's
-                  the best feeling ever. I would call it leveling up!
+                  My name is Alexander Borminskij and I work as a fullstack
+                  developer.
                   <br />
-                  Love my family, friends and my dog, an alaskan husky🐺
+                  I live in Sweden but there are many places to call home.
+                  <br />I would describe myself as a <strong>
+                    CYB
+                  </strong>ernetic <strong>ORG</strong>anism who enjoys using
+                  the CPU, even referred to as the brain.
                   <br />
-                  Enjoy travelling to different places on planet earth with
+                  Guess that's why I'm in this field of work!
+                  <br />
+                  I enjoy travelling to different places on planet earth with
                   positive energy and without fear.
-                  <br />
-                  Fitness is a lifestyle of mine and when the sun is out, the
-                  guns are out! 💪
                   <br />
                   Speaking four languages, programming languages excluded 🤪
                   <br />
