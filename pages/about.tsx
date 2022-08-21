@@ -31,14 +31,14 @@ const About: FC = () => {
         <title>Alexander Borminskij | About</title>
         <meta
           name="description"
-          content="Alexander Borminskij | Front End Developer"
+          content="Alexander Borminskij | Fullstack Developer"
         />
         <link rel="shortcut icon" href="/favicon.webp" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://borminskij.com" />
         <meta
           property="og:title"
-          content="Alexander Borminskij | Front End Developer"
+          content="Alexander Borminskij | Fullstack Developer"
         />
         <meta property="og:image" content="/meta-image.jpg" />
       </Head>
