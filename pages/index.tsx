@@ -13,6 +13,7 @@ export default function Home({}) {
           name="description"
           content="Alexander Borminskij | Front End Developer"
         />
+        <link rel="shortcut icon" href="/favicon.webp" />
         <meta property="og:type" content="website" />
         <meta name="robots" content="follow, index" />
         <meta property="og:url" content="https://borminskij.com" />

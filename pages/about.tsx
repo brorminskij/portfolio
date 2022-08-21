@@ -42,6 +42,7 @@ const About: FC = () => {
           name="description"
           content="Alexander Borminskij | Front End Developer"
         />
+        <link rel="shortcut icon" href="/favicon.webp" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://borminskij.com" />
         <meta
