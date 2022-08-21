@@ -69,9 +69,6 @@ const About: FC = () => {
                   I enjoy travelling to different places on planet earth with
                   positive energy and without fear.
                   <br />
-                  Fitness is a lifestyle of mine and when the sun is out, the
-                  guns are out! 💪
-                  <br />
                   Speaking four languages, programming languages excluded 🤪
                   <br />
                   If you are interested in knowing me more, don't hesitate to

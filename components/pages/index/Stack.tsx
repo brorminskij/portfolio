@@ -9,7 +9,7 @@ import {
   FaDatabase,
 } from "react-icons/fa";
 
-import Paragraph from "../../Paragraph";
+import Paragraph from "/components/Paragraph";
 
 const tools = [
   {

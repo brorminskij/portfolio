@@ -6,14 +6,12 @@ import {
   LightMode,
   Button,
   ButtonGroup,
-  useBoolean,
 } from "@chakra-ui/react";
 
 import { FaEnvelope, FaLinkedin } from "react-icons/fa";
-import Paragraph from "../../Paragraph";
+import Paragraph from "/components/Paragraph";
 
 const Profile = () => {
-  const [toggle, setToggle] = useBoolean();
   const [welcomeMessage, setWelcomeMessage] = useState([
     "Fullstack developer by day, technofreak by night. ",
     "Interested in the whole frontend sprectrum and everything it has to offer!",
@@ -26,8 +24,6 @@ const Profile = () => {
           as="h1"
           fontSize={{ base: "28px", md: "40px", lg: "48px" }}
           mb={3}
-          _hover={{ cursor: "pointer" }}
-          onClick={setToggle.toggle}
         >
           Hey, I'm Alexander!
         </Heading>
