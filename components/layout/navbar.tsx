@@ -16,7 +16,7 @@ import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { useRouter } from "next/router";
 import Link from "./link";
 import Image from "next/image";
-import logo from "../../public/wolf2.PNG";
+import logo from "/public/wolf.webp";
 
 export const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -69,7 +69,7 @@ export const Navbar = () => {
             />
             <HStack spacing={8} alignItems={"center"}>
               <Center className="logo">
-                <Image src={logo} width={32} height={32} alt="wolf logo" />
+                <Image src={logo} width={32} height={32} alt="Wolf logo" />
               </Center>
               <HStack
                 as={"nav"}
