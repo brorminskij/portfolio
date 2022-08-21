@@ -15,7 +15,7 @@ import Paragraph from "../../Paragraph";
 const Profile = () => {
   const [toggle, setToggle] = useBoolean();
   const [welcomeMessage, setWelcomeMessage] = useState([
-    "Full-stack developer by day, software enthusiast by night. ",
+    "Fullstack developer by day, technofreak by night. ",
     "Interested in the whole frontend sprectrum and everything it has to offer!",
   ]);
 
@@ -29,7 +29,7 @@ const Profile = () => {
           _hover={{ cursor: "pointer" }}
           onClick={setToggle.toggle}
         >
-          Hey, I'm {!toggle ? "Alexander" : "Borminskij"}!
+          Hey, I'm Alexander!
         </Heading>
         {welcomeMessage.map((i, index) => {
           return (
