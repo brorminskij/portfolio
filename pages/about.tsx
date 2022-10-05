@@ -29,17 +29,11 @@ const About: FC = () => {
     <div>
       <Head>
         <title>Alexander Borminskij | About</title>
-        <meta
-          name="description"
-          content="Alexander Borminskij | Fullstack Developer"
-        />
+        <meta name="description" content="Alexander Borminskij | Developer" />
         <link rel="shortcut icon" href="/favicon.webp" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://borminskij.com" />
-        <meta
-          property="og:title"
-          content="Alexander Borminskij | Fullstack Developer"
-        />
+        <meta property="og:title" content="Alexander Borminskij | Developer" />
         <meta property="og:image" content="/meta-image.jpg" />
       </Head>
       <main>
@@ -55,8 +49,7 @@ const About: FC = () => {
               </Heading>
               <Collapse startingHeight={100} in={show}>
                 <Paragraph fontSize="xl" lineHeight={1.6}>
-                  My name is Alexander Borminskij and I work as a fullstack
-                  developer.
+                  My name is Alexander Borminskij and I work as a developer.
                   <br />
                   I live in Sweden but there are many places to call home.
                   <br />I would describe myself as a <strong>

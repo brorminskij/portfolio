@@ -24,7 +24,7 @@ const Timeline = () => {
       <List spacing={18} fontSize="18">
         <ListItem>
           <ListIcon as={MdCheckCircle} color="purple.500" />
-          Fullstack dev at{" "}
+          Developer at{" "}
           <Link href="https://interactivesolutions.se/">
             Interactive Solutions
           </Link>

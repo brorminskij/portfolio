@@ -13,7 +13,7 @@ import Paragraph from "/components/Paragraph";
 
 const Profile = () => {
   const [welcomeMessage, setWelcomeMessage] = useState([
-    "Fullstack developer by day, technofreak by night. ",
+    "Developer by day, technofreak by night. ",
     "Interested in the whole frontend sprectrum and everything it has to offer!",
   ]);
 

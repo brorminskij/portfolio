@@ -44,6 +44,7 @@ export const Navbar = () => {
           p={2}
           rounded={"md"}
           currentPath={asPath}
+          onClick={onClose}
         >
           {link.name}
         </Link>
