@@ -28,7 +28,7 @@ const ToolCard = ({ tool }: ToolProps) => {
         borderWidth="1px"
         transition=".5s"
         cursor="pointer"
-        d="flex"
+        display="flex"
         role="group"
         _hover={{
           borderColor: "purple.500",
