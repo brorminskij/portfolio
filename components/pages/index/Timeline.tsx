@@ -24,10 +24,7 @@ const Timeline = () => {
       <List spacing={18} fontSize="18">
         <ListItem>
           <ListIcon as={MdCheckCircle} color="purple.500" />
-          Developer at{" "}
-          <Link href="https://interactivesolutions.se/">
-            Interactive Solutions
-          </Link>
+          Developer at <Link href="https://entire.se">Entire</Link>
         </ListItem>
         <ListItem>
           <ListIcon as={MdCheckCircle} color="purple.500" />
@@ -38,10 +35,7 @@ const Timeline = () => {
         </ListItem>
         <ListItem>
           <ListIcon as={MdCheckCircle} color="purple.500" />
-          Internship at{" "}
-          <Link href="https://interactivesolutions.se/">
-            Interactive Solutions
-          </Link>
+          Internship at <Link href="https://entire.se/">Entire</Link>
         </ListItem>
       </List>
       <Heading mt={10} mb={5} as="h2" size="md">
