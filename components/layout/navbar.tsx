@@ -33,6 +33,10 @@ export const Navbar = () => {
       name: "About me",
       route: "/about",
     },
+    {
+      name: "My blog",
+      route: "/blog",
+    },
   ];
 
   const navLinks = (
