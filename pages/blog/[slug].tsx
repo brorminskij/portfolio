@@ -1,1 +1,5 @@
-export default function WhatIsThisIDontEven() {}
+export const RecipeDetails = () => {
+  return <div>Recipe Details</div>;
+};
+
+export default RecipeDetails;
