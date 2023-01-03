@@ -27,7 +27,7 @@ export async function getStaticProps() {
     },
   };
 }
-export default function Blog({ articles }) {
+export const Blog = ({ articles }) => {
   console.log(articles);
   return (
     <div>
@@ -72,4 +72,6 @@ export default function Blog({ articles }) {
       </main>
     </div>
   );
-}
+};
+
+export default Blog;
