@@ -19,6 +19,15 @@ const Timeline = () => {
         Timeline
       </Heading>
       <Heading mt={10} mb={5} as="h2" size="md">
+        2023
+      </Heading>
+      <List spacing={18} fontSize="18">
+        <ListItem>
+          <ListIcon as={MdCheckCircle} color="purple.500" />
+          Developer at <Link href="https://entire.se">Entire</Link>
+        </ListItem>
+      </List>
+      <Heading mt={10} mb={5} as="h2" size="md">
         2022
       </Heading>
       <List spacing={18} fontSize="18">
