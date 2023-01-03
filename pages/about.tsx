@@ -16,11 +16,11 @@ import Paragraph from "../components/Paragraph";
 const About: FC = () => {
   const [show, setShow] = useState<boolean>(false);
 
-  const [likes, setLikes] = useState<string[]>(["Tech", "Adventure", "Summer"]);
+  const [likes, setLikes] = useState<string[]>(["Tech", "Adventure", "Books"]);
   const [dislikes, setDislikes] = useState<string[]>([
     "Gas prices",
     "Low Battery",
-    "Winter",
+    "Cold weather",
   ]);
 
   const handleToggle = () => setShow(!show);
