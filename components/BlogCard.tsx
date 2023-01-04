@@ -17,10 +17,11 @@ export const BlogCard = ({ article }) => {
     <Flex>
       <SlideFade in={true} offsetY={80} delay={0.2}>
         <Image
-          alt="Image fetched from contentful"
+          loading="eager"
           src={"https:" + thumbnail.fields.file.url}
           width={334}
           height={188}
+          alt="Image fetched from contentful"
         />
         <VStack mt={2}>
           <Text marginRight={"auto"} fontSize={14} opacity={0.6}>
