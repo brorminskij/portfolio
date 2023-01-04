@@ -36,17 +36,13 @@ export async function getStaticProps({ params }) {
 export const RecipeDetails = ({ article }) => {
   const { featuredImage, title } = article.fields;
   return (
-    <div>
-      <div className="banner">
-        <Image
-          src={"https:" + featuredImage.fields.file.url}
-          width={featuredImage.fields.file.details.image.width}
-          height={featuredImage.fields.file.details.image.height}
-          alt="Featured image fetched from contentful"
-        />
-        <h2>{title}</h2>
-      </div>
-    </div>
+            <Image
+              loading="eager"
+              src={"https:" + featuredImage.fields.file.url}
+              width={featuredImage.fields.file.details.image.width}
+              height={featuredImage.fields.file.details.image.height}
+              alt="Image fetched from contentful"
+            />
   );
 };
 
