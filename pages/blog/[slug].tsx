@@ -1,3 +1,4 @@
+import { Container, SlideFade } from "@chakra-ui/react";
 import { createClient } from "contentful";
 import Image from "next/image";
 
@@ -36,6 +37,10 @@ export async function getStaticProps({ params }) {
 export const RecipeDetails = ({ article }) => {
   const { featuredImage, title } = article.fields;
   return (
+    <Container maxW="container.lg">
+      <SlideFade in={true} offsetY={80} delay={0.2}>
+        <div>
+          <div className="banner">
             <Image
               loading="eager"
               src={"https:" + featuredImage.fields.file.url}
@@ -43,6 +48,11 @@ export const RecipeDetails = ({ article }) => {
               height={featuredImage.fields.file.details.image.height}
               alt="Image fetched from contentful"
             />
+            <h2>{title}</h2>
+          </div>
+        </div>
+      </SlideFade>
+    </Container>
   );
 };
 
