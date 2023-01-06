@@ -42,6 +42,13 @@ const options = {
   return (
     <Container maxW="container.lg" mt={10}>
       <SlideFade in={true} offsetY={80} delay={0.2}>
+        <Heading
+          as="h1"
+          fontSize={{ base: "28px", md: "32px", lg: "36px" }}
+          mb={4}
+        >
+          {title}
+        </Heading>
         <Paragraph fontSize="xl" lineHeight={1.6} mt={4}>
           {documentToReactComponents(content, options)}
         </Paragraph>
