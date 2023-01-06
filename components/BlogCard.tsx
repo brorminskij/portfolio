@@ -8,15 +8,7 @@ const dateSplit = (publishDate: string) => {
 };
 
 export const BlogCard = ({ article }) => {
-  const {
-    title,
-    author,
-    slug,
-    thumbnail,
-    featuredImage,
-    publishDate,
-    content,
-  } = article.fields;
+  const { title, author, slug, thumbnail, publishDate } = article.fields;
   return (
     <Flex>
       <SlideFade in={true} offsetY={80} delay={0.2}>
