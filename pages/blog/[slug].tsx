@@ -38,6 +38,8 @@ const options = {
   renderText: (text) =>
     text.split("\n").flatMap((text, i) => [i > 0 && <br />, text]),
 };
+
+export const ArticleDetails = ({ article }) => {
   const { featuredImage, title, content } = article.fields;
   return (
     <Container maxW="container.lg" mt={10}>
@@ -57,4 +59,4 @@ const options = {
   );
 };
 
-export default RecipeDetails;
+export default ArticleDetails;
