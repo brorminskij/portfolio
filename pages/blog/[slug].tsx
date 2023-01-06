@@ -38,6 +38,7 @@ const options = {
   renderText: (text) =>
     text.split("\n").flatMap((text, i) => [i > 0 && <br />, text]),
 };
+  const { featuredImage, title, content } = article.fields;
   return (
     <Container maxW="container.lg">
       <SlideFade in={true} offsetY={80} delay={0.2}>
