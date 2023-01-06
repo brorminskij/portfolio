@@ -10,26 +10,26 @@ const dateSplit = (publishDate: string) => {
 export const BlogCard = ({ article }) => {
   const { title, author, slug, thumbnail, publishDate } = article.fields;
   return (
-    <Flex>
-      <SlideFade in={true} offsetY={80} delay={0.2}>
-        <Image
-          loading="eager"
-          src={"https:" + thumbnail.fields.file.url}
-          width={334}
-          height={188}
-          alt="Image fetched from contentful"
-        />
-        <VStack mt={2}>
-          <Text marginRight={"auto"} fontSize={14} opacity={0.6}>
-            {publishDate}
-          </Text>
-        </VStack>
-        <Link legacyBehavior href={"/blog/" + slug}>
+    <Flex cursor="pointer">
+      <Link legacyBehavior href={"/blog/" + slug}>
+        <SlideFade in={true} offsetY={80} delay={0.2}>
+          <Image
+            loading="eager"
+            src={"https:" + thumbnail.fields.file.url}
+            width={334}
+            height={188}
+            alt="Image fetched from contentful"
+          />
+          <VStack mt={2}>
+            <Text marginRight={"auto"} fontSize={14} opacity={0.6}>
+              {dateSplit(publishDate)} by {author}
+            </Text>
+          </VStack>
           <Text fontSize="18px" textTransform="capitalize" cursor="pointer">
             {title}
           </Text>
-        </Link>
-      </SlideFade>
+        </SlideFade>
+      </Link>
     </Flex>
   );
 };
