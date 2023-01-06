@@ -34,8 +34,10 @@ export async function getStaticProps({ params }) {
   };
 }
 
-export const RecipeDetails = ({ article }) => {
-  const { featuredImage, title } = article.fields;
+const options = {
+  renderText: (text) =>
+    text.split("\n").flatMap((text, i) => [i > 0 && <br />, text]),
+};
   return (
     <Container maxW="container.lg">
       <SlideFade in={true} offsetY={80} delay={0.2}>
