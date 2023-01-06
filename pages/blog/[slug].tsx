@@ -40,7 +40,7 @@ const options = {
 };
   const { featuredImage, title, content } = article.fields;
   return (
-    <Container maxW="container.lg">
+    <Container maxW="container.lg" mt={10}>
       <SlideFade in={true} offsetY={80} delay={0.2}>
         <Paragraph fontSize="xl" lineHeight={1.6} mt={4}>
           {documentToReactComponents(content, options)}
