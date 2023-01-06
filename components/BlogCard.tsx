@@ -3,6 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
+const dateSplit = (publishDate: string) => {
+  return publishDate.split("T")[0];
+};
+
 export const BlogCard = ({ article }) => {
   const {
     title,
