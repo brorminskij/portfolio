@@ -1,6 +1,8 @@
-import { Container, SlideFade } from "@chakra-ui/react";
+import { Container, Heading, SlideFade } from "@chakra-ui/react";
 import { createClient } from "contentful";
 import Image from "next/image";
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import Paragraph from "../../components/Paragraph";
 
 const client = createClient({
   space: process.env.CONTENTFUL_SPACE_ID,
@@ -51,6 +53,13 @@ export const ArticleDetails = ({ article }) => {
         >
           {title}
         </Heading>
+        <Image
+          loading="eager"
+          src={"https:" + featuredImage.fields.file.url}
+          width={featuredImage.fields.file.details.image.width}
+          height={featuredImage.fields.file.details.image.height}
+          alt="Image fetched from contentful"
+        />
         <Paragraph fontSize="xl" lineHeight={1.6} mt={4}>
           {documentToReactComponents(content, options)}
         </Paragraph>
