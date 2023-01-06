@@ -42,18 +42,9 @@ const options = {
   return (
     <Container maxW="container.lg">
       <SlideFade in={true} offsetY={80} delay={0.2}>
-        <div>
-          <div className="banner">
-            <Image
-              loading="eager"
-              src={"https:" + featuredImage.fields.file.url}
-              width={featuredImage.fields.file.details.image.width}
-              height={featuredImage.fields.file.details.image.height}
-              alt="Image fetched from contentful"
-            />
-            <h2>{title}</h2>
-          </div>
-        </div>
+        <Paragraph fontSize="xl" lineHeight={1.6} mt={4}>
+          {documentToReactComponents(content, options)}
+        </Paragraph>
       </SlideFade>
     </Container>
   );
