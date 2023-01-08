@@ -20,13 +20,15 @@ export const BlogCard = ({ article }) => {
             height={278}
             alt="Image fetched from contentful"
           />
-          <VStack mt={2}>
-            <Text marginRight={"auto"} fontSize={14} opacity={0.6}>
-              {dateSplit(publishDate)} by {author}
-            </Text>
-          </VStack>
-          <Text fontSize="18px" textTransform="capitalize" cursor="pointer">
+          <Text
+            mt={2}
+            fontSize="18px"
+            textTransform="capitalize"
+            cursor="pointer"
+            _hover={{ textDecoration: "underline" }}
+          >
             {title}
+          </Text>
           </Text>
         </SlideFade>
       </Link>
