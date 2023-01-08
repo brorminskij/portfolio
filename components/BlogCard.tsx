@@ -29,6 +29,8 @@ export const BlogCard = ({ article }) => {
           >
             {title}
           </Text>
+          <Text marginRight={"auto"} fontSize={14} opacity={0.6} mt={2}>
+            {dateSplit(publishDate)} by {author}
           </Text>
         </SlideFade>
       </Link>
