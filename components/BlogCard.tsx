@@ -1,4 +1,4 @@
-import { Flex, SlideFade, Text, VStack } from "@chakra-ui/react";
+import { Flex, SlideFade, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
