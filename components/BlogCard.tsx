@@ -1,4 +1,4 @@
-import { Flex, SlideFade, Text, VStack } from "@chakra-ui/react";
+import { Flex, SlideFade, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -16,17 +16,21 @@ export const BlogCard = ({ article }) => {
           <Image
             loading="eager"
             src={"https:" + thumbnail.fields.file.url}
-            width={334}
-            height={188}
+            width={556}
+            height={278}
             alt="Image fetched from contentful"
           />
-          <VStack mt={2}>
-            <Text marginRight={"auto"} fontSize={14} opacity={0.6}>
-              {dateSplit(publishDate)} by {author}
-            </Text>
-          </VStack>
-          <Text fontSize="18px" textTransform="capitalize" cursor="pointer">
+          <Text
+            mt={2}
+            fontSize="18px"
+            textTransform="capitalize"
+            cursor="pointer"
+            _hover={{ textDecoration: "underline" }}
+          >
             {title}
+          </Text>
+          <Text marginRight={"auto"} fontSize={14} opacity={0.6} mt={2}>
+            {dateSplit(publishDate)} by {author}
           </Text>
         </SlideFade>
       </Link>
