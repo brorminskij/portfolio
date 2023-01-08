@@ -16,8 +16,8 @@ export const BlogCard = ({ article }) => {
           <Image
             loading="eager"
             src={"https:" + thumbnail.fields.file.url}
-            width={334}
-            height={188}
+            width={556}
+            height={278}
             alt="Image fetched from contentful"
           />
           <VStack mt={2}>
