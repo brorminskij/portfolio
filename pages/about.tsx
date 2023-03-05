@@ -52,14 +52,11 @@ const About: FC = () => {
                   My name is Alexander Borminskij and I work as a developer.
                   <br />
                   I live in Sweden but there are many places to call home.
-                  <br />I am a big fan of the front-end spectrum and I love
+                  <br />I am a big fan of the frontend spectrum and I love
                   coding in <strong>Javascript.</strong>
                   <br />
                   Currently, I'm using{" "}
-                  <strong>
-                    Javascript with flow, Typescript, React & React Native
-                  </strong>{" "}
-                  at work.
+                  <strong>Typescript, React & Native</strong> at work.
                   <br />
                   Speaking four languages, programming languages excluded 🤪
                   <br />
