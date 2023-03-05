@@ -29,7 +29,7 @@ const Timeline = () => {
         Timeline
       </Heading>
       <Heading mt={10} mb={5} as="h2" size="md">
-        2023
+        2022 - Present
       </Heading>
       <List spacing={18} fontSize="18">
         <ListItem>
