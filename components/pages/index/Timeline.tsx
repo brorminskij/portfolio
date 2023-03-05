@@ -43,6 +43,7 @@ const Timeline = () => {
             return (
               <Link key={project.projectName} href={project.websiteName}>
                 {project.projectName}
+                {projects.length - 1 !== index && ", "}
               </Link>
             );
           })}
