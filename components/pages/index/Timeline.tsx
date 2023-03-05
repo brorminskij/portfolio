@@ -8,6 +8,16 @@ import {
 } from "@chakra-ui/react";
 import { MdCheckCircle } from "react-icons/md";
 
+const projects = [
+  { projectName: "Quixel", websiteName: "https://www.quixel.com" },
+  {
+    projectName: "WeDontHaveTime",
+    websiteName: "https://www.wedonthavetime.com",
+  },
+  { projectName: "Responster", websiteName: "https://www.responster.com" },
+  { projectName: "Springlife", websiteName: "https://www.springlife.se" },
+];
+
 const Timeline = () => {
   return (
     <SlideFade in={true} offsetY={80} delay={0.2}>
