@@ -28,7 +28,6 @@ export async function getStaticProps() {
   };
 }
 export const Blog = ({ articles }) => {
-  console.log(articles);
   return (
     <div>
       <Head>
