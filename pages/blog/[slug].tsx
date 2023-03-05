@@ -54,7 +54,9 @@ export const ArticleDetails = ({ article }) => {
           {title}
         </Heading>
         <Image
-          loading="eager"
+          placeholder="blur"
+          blurDataURL="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+          priority
           src={"https:" + featuredImage.fields.file.url}
           width={featuredImage.fields.file.details.image.width}
           height={featuredImage.fields.file.details.image.height}

@@ -14,7 +14,9 @@ export const BlogCard = ({ article }) => {
       <Link legacyBehavior href={"/blog/" + slug}>
         <SlideFade in={true} offsetY={80} delay={0.2}>
           <Image
-            loading="eager"
+            placeholder="blur"
+            blurDataURL="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+            priority
             src={"https:" + thumbnail.fields.file.url}
             width={556}
             height={278}
