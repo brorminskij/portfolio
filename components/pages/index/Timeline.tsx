@@ -36,6 +36,17 @@ const Timeline = () => {
           <ListIcon as={MdCheckCircle} color="purple.500" />
           Developer at <Link href="https://entire.se">Entire</Link>
         </ListItem>
+        <ListItem>
+          <ListIcon as={MdCheckCircle} color="purple.500" />
+          Projects:{" "}
+          {projects.map((project, index) => {
+            return (
+              <Link key={project.projectName} href={project.websiteName}>
+                {project.projectName}
+              </Link>
+            );
+          })}
+        </ListItem>
       </List>
       <Heading mt={10} mb={5} as="h2" size="md">
         2022
