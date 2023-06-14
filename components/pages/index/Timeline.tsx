@@ -35,6 +35,10 @@ const Timeline = () => {
       <List spacing={18} fontSize="18">
         <ListItem>
           <ListIcon as={MdCheckCircle} color="purple.500" />
+          Lead Generation Specialist at Freelance
+        </ListItem>
+        <ListItem>
+          <ListIcon as={MdCheckCircle} color="purple.500" />
           Developer at <Link href="https://entire.se">Entire</Link>
         </ListItem>
         <ListItem>
