@@ -49,9 +49,11 @@ const About: FC = () => {
               </Heading>
               <Collapse startingHeight={100} in={show}>
                 <Paragraph fontSize="xl" lineHeight={1.6}>
-                  My name is Alexander Borminskij and I work as a developer.
+                  My name is Alexander Borminskij and I work as a developer /
+                  lead generation specialist.
                   <br />
-                  I live in Sweden but there are many places to call home.
+                  I currenly live in Spain but there are many places to call
+                  home.
                   <br />I am a big fan of the frontend spectrum and I love
                   coding in <strong>Javascript.</strong>
                   <br />
