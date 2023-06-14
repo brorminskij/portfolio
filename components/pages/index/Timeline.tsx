@@ -16,6 +16,7 @@ const projects = [
   },
   { projectName: "Responster", websiteName: "https://www.responster.com" },
   { projectName: "Springlife", websiteName: "https://www.springlife.se" },
+  { projectName: "OneX", websiteName: "https://www.1x.com" },
 ];
 
 const Timeline = () => {
